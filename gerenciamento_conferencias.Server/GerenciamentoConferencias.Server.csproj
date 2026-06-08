@@ -17,7 +17,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\gerenciamento_conferencias.client\gerenciamento_conferencias.client.esproj">
+    <ProjectReference Include="..\gerenciamento_conferencias.client\GerenciamentoConferencias.Client.esproj">
       <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
     </ProjectReference>
   </ItemGroup>
