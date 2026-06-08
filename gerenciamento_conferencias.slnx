@@ -1,0 +1,7 @@
+<Solution>
+  <Project Path="gerenciamento_conferencias.client/gerenciamento_conferencias.client.esproj">
+    <Build />
+    <Deploy />
+  </Project>
+  <Project Path="gerenciamento_conferencias.Server/gerenciamento_conferencias.Server.csproj" />
+</Solution>
