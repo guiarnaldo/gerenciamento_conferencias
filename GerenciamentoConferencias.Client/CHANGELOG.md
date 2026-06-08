@@ -4,10 +4,10 @@ As seguintes ferramentas foram usadas para gerar este projeto:
 - create-vite
 
 As etapas a seguir foram usadas para gerar este projeto:
-- Crie um projeto do vue com create-vite: `npm init --yes vue@latest gerenciamento_conferencias.client -- --eslint `.
+- Crie um projeto do vue com create-vite: `npm init --yes vue@latest GerenciamentoConferencias.client -- --eslint `.
 - Atualize `vite.config.js` para configurar o proxy e os certificados.
 - Atualize o componente `HelloWorld` para buscar e exibir informações meteorológicas.
-- Criar o arquivo de projeto (`gerenciamento_conferencias.client.esproj`).
+- Criar o arquivo de projeto (`GerenciamentoConferencias.client.esproj`).
 - Crie `launch.json` para habilitar a depuração.
 - Adicionar projeto à solução.
 - Atualize o ponto de extremidade do proxy para ser o ponto de extremidade do servidor back-end.
