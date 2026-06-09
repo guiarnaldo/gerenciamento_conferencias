@@ -1,4 +1,3 @@
-
 using GerenciamentoConferencias.Server.Dto;
 using GerenciamentoConferencias.Server.Models;
 using GerenciamentoConferencias.Server.Services;
@@ -9,6 +8,8 @@ namespace GerenciamentoConferencias.Server.Controllers
 
     [ApiController]
     [Route("api/[controller]")]
+    // Limita todas as requests a 250kb
+    [RequestSizeLimit(250_000)]
     public class ConferenciaController(OrganizarConferenciaService organizador): ControllerBase
     {
         private readonly OrganizarConferenciaService _organizador = organizador;

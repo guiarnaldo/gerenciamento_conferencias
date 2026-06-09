@@ -12,6 +12,7 @@ namespace GerenciamentoConferencias.Server.Services
         private const int HORA_INICIO_TARDE = 13;
         private const int HORA_NETWORKING_MIN = 16;
         private const int HORA_NETWORKING_MAX = 17;
+        private const int DURACAO_MAXIMA = 240;
 
         public static PalestraDto ConverterEntrada(PalestraEntradaDto entrada)
         {
@@ -307,6 +308,9 @@ namespace GerenciamentoConferencias.Server.Services
 
             if (!int.TryParse(ultima[..^"min".Length], out var tempo) || tempo <= 0)
                 throw new ArgumentException($"Duração inválida: {ultima}");
+
+            if (tempo > DURACAO_MAXIMA)
+                throw new ArgumentException($"Duração máxima por palestra é {DURACAO_MAXIMA}min. Recebido: {tempo}min");
 
             return new PalestraEntradaDto
             {
