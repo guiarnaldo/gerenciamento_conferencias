@@ -1,0 +1,20 @@
+meta {
+  name: Organizar-Json
+  type: http
+  seq: 4
+}
+
+post {
+  url: http://localhost:5157/api/conferencia/organizar-json
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {"palestras":[{"nome":"Writing Fast Tests Against Enterprise .Net","tempo":60,"isRelampago":false,"duracaoMinutos":60,"formatoDuracao":"60min"},{"nome":"Overdoing it in Python","tempo":45,"isRelampago":false,"duracaoMinutos":45,"formatoDuracao":"45min"},{"nome":"Lua for the Masses","tempo":30,"isRelampago":false,"duracaoMinutos":30,"formatoDuracao":"30horas"},{"nome":".Net Errors from Mismatched Nuget Versions","tempo":45,"isRelampago":false,"duracaoMinutos":45,"formatoDuracao":"45min"},{"nome":"Common .Net Errors","tempo":45,"isRelampago":false,"duracaoMinutos":45,"formatoDuracao":"45min"},{"nome":"Python for .Net Developers","tempo":0,"isRelampago":true,"duracaoMinutos":5,"formatoDuracao":"relâmpago"},{"nome":"Communicating Over Distance","tempo":60,"isRelampago":false,"duracaoMinutos":60,"formatoDuracao":"60min"},{"nome":"Accounting-Driven Development","tempo":45,"isRelampago":false,"duracaoMinutos":45,"formatoDuracao":"45min"},{"nome":"Woah","tempo":30,"isRelampago":false,"duracaoMinutos":30,"formatoDuracao":"30min"},{"nome":"Sit Down and Write","tempo":30,"isRelampago":false,"duracaoMinutos":30,"formatoDuracao":"30min"},{"nome":"Pair Programming vs Noise","tempo":45,"isRelampago":false,"duracaoMinutos":45,"formatoDuracao":"45min"},{"nome":".Net Magic","tempo":60,"isRelampago":false,"duracaoMinutos":60,"formatoDuracao":"60min"},{"nome":".Net Core: Why We Should Move On","tempo":60,"isRelampago":false,"duracaoMinutos":60,"formatoDuracao":"60min"},{"nome":"Clojure Ate Scala (on my project)","tempo":45,"isRelampago":false,"duracaoMinutos":45,"formatoDuracao":"45min"},{"nome":"Programming in the Boondocks of Seattle","tempo":30,"isRelampago":false,"duracaoMinutos":30,"formatoDuracao":"30min"},{"nome":".Net vs. Clojure for Back-End Development","tempo":30,"isRelampago":false,"duracaoMinutos":30,"formatoDuracao":"30min"},{"nome":".Net Core Legacy App Maintenance","tempo":60,"isRelampago":false,"duracaoMinutos":60,"formatoDuracao":"60min"},{"nome":"A World Without HackerNews","tempo":30,"isRelampago":false,"duracaoMinutos":30,"formatoDuracao":"30min"},{"nome":"User Interface CSS in .Net Apps","tempo":30,"isRelampago":false,"duracaoMinutos":30,"formatoDuracao":"30min"}]}
+}
+
+settings {
+  encodeUrl: true
+  timeout: 0
+}

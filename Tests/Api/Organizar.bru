@@ -1,0 +1,23 @@
+meta {
+  name: Organizar
+  type: http
+  seq: 3
+}
+
+post {
+  url: http://localhost:5157/api/conferencia/organizar
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {
+    "exemplo": "Exemplo gerado com ferramenta de IA para fim de testes",
+    "texto": "Como Sobreviver a Reuniões de Sprint 60min\nGit Blame: A Arte de Encontrar o Culpado 45min\nCSS: Quando tudo é !important 30min\nO Mito do Código Legado: É Tudo Legado 45min\nMicroserviços: De Volta ao Monolito 60min\nRubber Duck Debugging relâmpago\nKubernetes: Orquestrando o Caos 60min\nCode Review sem Drama 45min\nSexta-feira em Produção: Um Guia Prático 30min\nRefatoração: Ato de Coragem 45min\nStack Overflow Driven Development 30min\nDocumentação: A Lenda 45min\nServerless: Menos é Mais 60min\nPair Programming: Duas Mentes, Um Teclado 45min\nO Poder do Ctrl+C Ctrl+V 5min\nDevOps: Não é Sobre Ferramentas 60min\nMensagens de Commit Poéticas 30min\nO Síndrome do Impostor no Open Source 45min\nArquitetura Limpa: O Sonho 60min\nDebug com Console.log: Técnicas Avançadas 30min\nAgile vs Realidade: Um Estudo de Caso 45min\nO Último Commit da Sexta 30min\nProgramação Funcional: Por que Tudo é Função? 60min\nCode Smells: Identificando Aromas Suspeitos 45min\nO Mundo Antes do Git 30min\nAPIs RESTful: O Descanso do Desenvolvedor 45min\nDark Mode: Filosofia de Vida 5min\nTestes Unitários: Confiança ou Fachada? 60min\nO Zen do Terminal 45min\nDocker: Funciona na Minha Máquina 60min\nLegacy Code: Arqueologia de Software 45min\nO Padrão Singleton: Solidão Garantida 30min\nProgramação Assíncrona: Esperando Nada 60min\nClean Code: A Busca pelo Código Perfeito 45min\nO Bug que Ninguém Consegue Reproduzir 30min\nMachine Learning: Mágica ou Matemática? 60min\nO Código que Escrevi Ontem 5min\nSegurança: Não é Paranoia 45min\nO Futuro do JavaScript: Ainda JavaScript 30min\nMentoria: Passando o Bastão 45min"
+  }
+}
+
+settings {
+  encodeUrl: true
+  timeout: 0
+}
