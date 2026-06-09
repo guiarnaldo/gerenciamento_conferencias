@@ -34,7 +34,7 @@ dotnet run --project "GerenciamentoConferencias.Server/GerenciamentoConferencias
 | Tecnologia | Porta |
 |-----------|--------|
 | Site - Vue.Js | `https://localhost:60638/` |
-| API - .NET  | `http://localhost:5157/` |
+| API - .NET  | `https://localhost:7016/` |
 
 # Prints
 

@@ -37,6 +37,9 @@ if (!fs.existsSync(certFilePath) || !fs.existsSync(keyFilePath)) {
 }
 
 // https://vitejs.dev/config/
+const target = env.ASPNETCORE_HTTPS_PORT ? `https://localhost:${env.ASPNETCORE_HTTPS_PORT}` :
+  env.ASPNETCORE_URLS ? env.ASPNETCORE_URLS.split(';')[0] : 'https://localhost:7016';
+
 export default defineConfig({
   plugins: [plugin(), tailwindcss()],
   resolve: {
@@ -47,7 +50,7 @@ export default defineConfig({
   server: {
     proxy: {
       '^/api': {
-        target: "http://localhost:5157",
+        target,
         changeOrigin: true,
         secure: false
       }
