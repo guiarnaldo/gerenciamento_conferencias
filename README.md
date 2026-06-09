@@ -21,13 +21,14 @@ Esse projeto foi desenvolvido como teste técnico para o processo seletivo do `G
 |------------|-----|
 | Bruno | Testes de API (Disponíveis na pasta `Tests`) |
 
-# Instalação e Execução
+# Instalação
 
 - Clonar repositório para uma pasta de sua escolha
 - Navegar até a pasta do projeto
-- Executar o comando:
+- Executar os comandos:
 ```shell
-dotnet run --project "GerenciamentoConferencias.Server/GerenciamentoConferencias.Server.csproj"
+cd GerenciamentoConferencias.Client && npm install
+dotnet run --project "../GerenciamentoConferencias.Server/GerenciamentoConferencias.Server.csproj"
 ```
 - Após instalar os pacotes do Nuget e NPM, a aplicação estará disponível nas seguintes portas:
 
@@ -35,6 +36,11 @@ dotnet run --project "GerenciamentoConferencias.Server/GerenciamentoConferencias
 |-----------|--------|
 | Site - Vue.Js | `https://localhost:60638/` |
 | API - .NET  | `https://localhost:7016/` |
+
+- Nas execuções subsequentes é necessário apenas executar o seguinte comando:
+```shell
+dotnet run --project "GerenciamentoConferencias.Server/GerenciamentoConferencias.Server.csproj"
+```
 
 # Prints
 

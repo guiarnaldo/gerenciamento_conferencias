@@ -24,6 +24,9 @@ namespace GerenciamentoConferencias.Server.Services
             if (duracao <= 0)
                 throw new ArgumentException($"Duração inválida para palestra: {entrada.Nome}");
 
+            if (entrada.Tempo > DURACAO_MAXIMA)
+                throw new ArgumentException($"Duração máxima por palestra é {DURACAO_MAXIMA}min. Recebido: {entrada.Tempo}min");
+
             return new PalestraDto(entrada.Nome, duracao);
         }
 
